@@ -39,4 +39,4 @@ RUN TZ=Asia/Shanghai \
        		echo 'ignore_repeated_source = Off'; \
        		echo 'html_errors = Off'; \
        	} > /usr/local/etc/php/conf.d/error-logging.ini
-RUN apk add bash && curl -sS https://get.symfony.com/cli/installer | bash
+RUN apk add bash && curl -sS https://get.symfony.com/cli/installer | bash && mv ~/.symfony/bin/symfony /usr/local/bin/symfony
